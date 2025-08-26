@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leads Infographic (May 1st - Aug 22nd, 2025)</title>
+    <style>
+      /* --- General Styles --- */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        background-color: #f0f2f5;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 900px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+      }
+
+      /* --- Header & Titles --- */
+      header {
+        text-align: center;
+        border-bottom: 2px solid #e9ecef;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      h1 {
+        color: #1a2b4d;
+        font-size: 2.2em;
+        margin: 0;
+      }
+      header p {
+        color: #6c757d;
+        font-size: 1.1em;
+        margin-top: 5px;
+      }
+
+      /* --- Content Cards --- */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+      }
+      .card {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 20px;
+      }
+      .card h2 {
+        font-size: 1.4em;
+        color: #343a40;
+        margin-top: 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+      }
+
+      /* --- Main KPI --- */
+      .kpi-card {
+        grid-column: 1 / -1; /* Spans full width */
+        text-align: center;
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+      }
+      .kpi-number {
+        font-size: 4em;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .kpi-text {
+        font-size: 1.5em;
+        margin: 0;
+      }
+
+      /* --- Simple Bar Charts --- */
+      .bar-chart {
+        list-style: none;
+        padding: 0;
+      }
+      .bar-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .bar-label {
+        width: 80px; /* Fixed width for labels */
+        font-weight: 500;
+      }
+      .bar-container {
+        flex-grow: 1;
+        background-color: #e9ecef;
+        border-radius: 5px;
+      }
+      .bar {
+        height: 24px;
+        background-color: #007bff;
+        border-radius: 5px;
+        color: white;
+        text-align: right;
+        padding-right: 8px;
+        line-height: 24px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: width 0.5s ease-in-out;
+      }
+      .bar.secondary {
+        background-color: #28a745;
+      }
+
+      /* --- Ranking Lists (Top Agents/Campaigns) --- */
+      .leaderboard {
+        list-style: none;
+        padding-left: 0;
+      }
+      .leaderboard li {
+        background-color: #ffffff;
+        margin-bottom: 8px;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #e0e0e0;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+      }
+      .leaderboard li:first-child {
+        background-color: #ffd700; /* Gold */
+        font-weight: bold;
+      }
+      .leaderboard li:nth-child(2) {
+        background-color: #c0c0c0; /* Silver */
+      }
+      .leaderboard li:nth-child(3) {
+        background-color: #cd7f32; /* Bronze */
+      }
+
+      /* --- Call Breakdown --- */
+      .call-breakdown p {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+      .call-breakdown ul {
+        list-style: "↳  ";
+        padding-left: 20px;
+      }
+      .call-breakdown li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Lead Generation Infographic</h1>
+        <p>Analysis from May 1st to August 22nd, 2025</p>
+      </header>
+
+      <div class="grid">
+        <div class="card kpi-card">
+          <p class="kpi-text">Total Confirmed Appointments 🚀</p>
+          <div class="kpi-number">556</div>
+        </div>
+
+        <div class="card">
+          <h2>🗓️ Best Days of the Week</h2>
+          <ul class="bar-chart">
+            <li class="bar-item">
+              <span class="bar-label">Thursday</span>
+              <div class="bar-container">
+                <div class="bar" style="width: 100%">150 leads</div>
+              </div>
+            </li>
+            <li class="bar-item">
+              <span class="bar-label">Friday</span>
+              <div class="bar-container">
+                <div class="bar" style="width: 80.6%">121 leads</div>
+              </div>
+            </li>
+            <li class="bar-item">
+              <span class="bar-label">Monday</span>
+              <div class="bar-container">
+                <div class="bar" style="width: 69.3%">104 leads</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>⏰ Peak Productivity Hours</h2>
+          <ul class="bar-chart">
+            <li class="bar-item">
+              <span class="bar-label">7:00 PM</span>
+              <div class="bar-container">
+                <div class="bar secondary" style="width: 100%">120 leads</div>
+              </div>
+            </li>
+            <li class="bar-item">
+              <span class="bar-label">6:00 PM</span>
+              <div class="bar-container">
+                <div class="bar secondary" style="width: 90.8%">109 leads</div>
+              </div>
+            </li>
+            <li class="bar-item">
+              <span class="bar-label">5:00 PM</span>
+              <div class="bar-container">
+                <div class="bar secondary" style="width: 65.8%">79 leads</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>🏆 All-Star Agents</h2>
+          <ol class="leaderboard">
+            <li><span>🥇 ANNA</span> <span>51 leads</span></li>
+            <li><span>🥈 ERIC</span> <span>40 leads</span></li>
+            <li><span>🥉 ENRIQUE S.</span> <span>35 leads</span></li>
+            <li><span>GABRIEL</span> <span>33 leads</span></li>
+            <li><span>SOFIA</span> <span>33 leads</span></li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h2>🎯 Top Performing Campaigns</h2>
+          <ol class="leaderboard">
+            <li><span>🥇 DALLAS</span> <span>115 leads</span></li>
+            <li><span>🥈 TULSA</span> <span>111 leads</span></li>
+            <li><span>🥉 ALBUQUERQUE</span> <span>90 leads</span></li>
+            <li><span>TYLER</span> <span>50 leads</span></li>
+            <li><span>NASHVILLE</span> <span>48 leads</span></li>
+          </ol>
+        </div>
+
+        <div class="card call-breakdown" style="grid-column: 1 / -1">
+          <h2>📞 Call Status Analysis</h2>
+          <p>Total calls analyzed: 468,846</p>
+          <ul>
+            <li>
+              <strong>53.7%</strong> - Successful Contact (Agent spoke to the
+              lead).
+            </li>
+            <li>
+              <strong>24.5%</strong> - No Answer (Call was not picked up).
+            </li>
+            <li><strong>4.7%</strong> - Not Interested / Future Follow-up.</li>
+            <li>
+              <strong>0.13%</strong> -
+              <strong>Appointment Set!</strong> (Successful conversion).
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
